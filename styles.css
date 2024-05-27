@@ -104,6 +104,32 @@ body {
     color: white;
 }
 
+.upload-section {
+    margin-top: 20px;
+}
+
+.upload-section form {
+    display: flex;
+    align-items: center;
+}
+
+.upload-section input[type="file"] {
+    margin-right: 10px;
+}
+
+.upload-section button {
+    background-color: #1F74BD;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+#upload-status {
+    margin-top: 10px;
+    color: green;
+}
+
 .ongoing-projects, .past-projects {
     margin-top: 20px;
 }
