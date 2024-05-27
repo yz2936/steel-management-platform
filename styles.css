@@ -1,0 +1,128 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.sidebar {
+    width: 200px;
+    background-color: #2E3B4E;
+    color: white;
+    height: 100vh;
+    padding-top: 20px;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    padding: 15px;
+    text-align: center;
+}
+
+.sidebar ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.sidebar ul li a.active {
+    color: #FF5A5F;
+}
+
+.main-content {
+    flex-grow: 1;
+    padding: 20px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.new-project-btn {
+    background-color: #1F74BD;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+.project-section {
+    margin-top: 20px;
+}
+
+.project-section table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+.project-section table, th, td {
+    border: 1px solid #ddd;
+}
+
+.project-section th, td {
+    padding: 10px;
+    text-align: left;
+}
+
+.recipient {
+    margin-top: 10px;
+}
+
+.recipient label {
+    margin-right: 10px;
+}
+
+.recipient input {
+    padding: 5px;
+    width: 300px;
+}
+
+.actions {
+    margin-top: 10px;
+}
+
+.actions button {
+    padding: 10px 20px;
+    margin-right: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+.send-list-btn {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.send-network-btn {
+    background-color: #FF5A5F;
+    color: white;
+}
+
+.ongoing-projects, .past-projects {
+    margin-top: 20px;
+}
+
+.project-list {
+    margin-top: 10px;
+}
+
+.project-list button {
+    display: block;
+    width: 100%;
+    padding: 20px;
+    margin-bottom: 10px;
+    background-color: #E0E0E0;
+    border: none;
+    cursor: pointer;
+    text-align: left;
+}
+
+.project-list button:hover {
+    background-color: #BDBDBD;
+}
