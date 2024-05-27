@@ -4,123 +4,199 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TripleX Selling</title>
-    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: white;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        header nav {
+            display: flex;
+            gap: 20px;
+        }
+        header nav a {
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+        }
+        header .auth-buttons {
+            display: flex;
+            gap: 10px;
+        }
+        header .auth-buttons a {
+            text-decoration: none;
+            color: white;
+            background-color: #333;
+            padding: 10px 20px;
+            border-radius: 5px;
+        }
+        .main-banner {
+            position: relative;
+            width: 100%;
+            height: 300px;
+            background: url('https://via.placeholder.com/800x300') center/cover no-repeat;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-align: center;
+        }
+        .main-banner h1 {
+            font-size: 36px;
+            margin: 0;
+        }
+        .main-banner p {
+            font-size: 18px;
+        }
+        .container {
+            display: flex;
+            padding: 20px;
+            gap: 20px;
+        }
+        .filter-section {
+            flex: 1;
+            background-color: white;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        .filter-section h3 {
+            margin-top: 0;
+        }
+        .filter-section .filter-group {
+            margin-bottom: 20px;
+        }
+        .filter-section label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        .filter-section input,
+        .filter-section select {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        .results-section {
+            flex: 2;
+            background-color: white;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        .results-section table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        .results-section table, 
+        .results-section th, 
+        .results-section td {
+            border: 1px solid #ddd;
+        }
+        .results-section th, 
+        .results-section td {
+            padding: 10px;
+            text-align: left;
+        }
+        .results-section th {
+            background-color: #f4f4f4;
+        }
+        .results-section .bid-button {
+            background-color: #333;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+            text-align: center;
+            display: block;
+        }
+    </style>
 </head>
 <body>
     <header>
         <nav>
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Services</a></li>
-                <li><a href="#">Sign Up</a></li>
-                <li><a href="#">Login</a></li>
-            </ul>
+            <a href="#">Home</a>
+            <a href="#">Services</a>
         </nav>
-    </header>
-    <main>
-        <section class="welcome-section">
-            <h1>Welcome to TripleX selling.</h1>
-            <p>Start bidding on the products that you are specialized in.</p>
-        </section>
-        <div class="container">
-            <aside class="product-details">
-                <h2>Product Details</h2>
-                <div class="filter">
-                    <label for="grade">Grade</label>
-                    <select id="grade">
-                        <option value="">Search</option>
-                        <option value="xxx">XXX</option>
-                        <option value="xxx">XXX</option>
-                        <option value="xxx">XXX</option>
-                        <option value="xxx">XXX</option>
-                    </select>
-                </div>
-                <div class="filter">
-                    <label for="thickness">Thickness</label>
-                    <input type="number" id="thickness-min" placeholder="Min (inch)">
-                    <input type="number" id="thickness-max" placeholder="Max (inch)">
-                </div>
-                <div class="filter">
-                    <label for="outside-diameters">Outside Diameters</label>
-                    <input type="number" id="outside-diameters-min" placeholder="Min (inch)">
-                    <input type="number" id="outside-diameters-max" placeholder="Max (inch)">
-                </div>
-                <div class="filter">
-                    <label for="length">Length (Meter)</label>
-                    <input type="number" id="length" placeholder="Length (Meter)">
-                </div>
-                <div class="filter">
-                    <label for="quantity">Quantity (Kg)</label>
-                    <input type="number" id="quantity" placeholder="Quantity (Kg)">
-                </div>
-                <div class="filter">
-                    <label for="finishing-condition">Finishing Condition</label>
-                    <select id="finishing-condition">
-                        <option value="bright-annealed">Bright Annealed</option>
-                        <option value="polished">Polished</option>
-                        <option value="anneals-pickled">Anneals Pickled</option>
-                    </select>
-                </div>
-                <div class="filter">
-                    <label for="location">Location</label>
-                    <select id="location">
-                        <option value="usa">USA</option>
-                        <option value="mco">MCO</option>
-                    </select>
-                </div>
-            </aside>
-            <section class="results-showed">
-                <h2>Results Showed</h2>
-                <table>
-                    <thead>
-                        <tr>
-                            <th>Product</th>
-                            <th>Quantity</th>
-                            <th>Location</th>
-                            <th>Bid</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>316 SS Seamless Tubing 1/4" x .028 x 20'</td>
-                            <td>15</td>
-                            <td>USA</td>
-                            <td><button>Bid</button></td>
-                        </tr>
-                        <tr>
-                            <td>316 SS Seamless Tubing 1/4" x .028 x 20'</td>
-                            <td>15</td>
-                            <td>USA</td>
-                            <td><button>Bid</button></td>
-                        </tr>
-                        <tr>
-                            <td>316 SS Seamless Tubing 1/4" x .028 x 20'</td>
-                            <td>15</td>
-                            <td>USA</td>
-                            <td><button>Bid</button></td>
-                        </tr>
-                        <tr>
-                            <td>316 SS Seamless Tubing 1/4" x .028 x 20'</td>
-                            <td>15</td>
-                            <td>USA</td>
-                            <td><button>Bid</button></td>
-                        </tr>
-                        <tr>
-                            <td>316 SS Seamless Tubing 1/4" x .028 x 20'</td>
-                            <td>15</td>
-                            <td>USA</td>
-                            <td><button>Bid</button></td>
-                        </tr>
-                        <tr>
-                            <td>316 SS Seamless Tubing 1/4" x .028 x 20'</td>
-                            <td>15</td>
-                            <td>USA</td>
-                            <td><button>Bid</button></td>
-                        </tr>
-                    </tbody>
-                </table>
-            </section>
+        <div class="auth-buttons">
+            <a href="#">Sign Up</a>
+            <a href="#">Login</a>
         </div>
-    </main>
+    </header>
+    <div class="main-banner">
+        <div>
+            <h1>Welcome to TripleX Selling</h1>
+            <p>Start bidding on the products that you are specialized in.</p>
+        </div>
+    </div>
+    <div class="container">
+        <div class="filter-section">
+            <h3>Product Details</h3>
+            <div class="filter-group">
+                <label for="grade">Grade</label>
+                <input type="text" id="grade" name="grade" placeholder="Search">
+            </div>
+            <div class="filter-group">
+                <label for="thickness">Thickness</label>
+                <input type="number" id="min-thickness" name="min-thickness" placeholder="Min (inch)">
+                <input type="number" id="max-thickness" name="max-thickness" placeholder="Max (inch)">
+            </div>
+            <div class="filter-group">
+                <label for="diameter">Outside Diameter</label>
+                <input type="number" id="min-diameter" name="min-diameter" placeholder="Min (inch)">
+                <input type="number" id="max-diameter" name="max-diameter" placeholder="Max (inch)">
+            </div>
+            <div class="filter-group">
+                <label for="length">Length</label>
+                <input type="number" id="length" name="length" placeholder="Length (Meter)">
+            </div>
+            <div class="filter-group">
+                <label for="quantity">Quantity</label>
+                <input type="number" id="quantity" name="quantity" placeholder="Quantity (Kg)">
+            </div>
+            <div class="filter-group">
+                <label for="finishing">Finishing Condition</label>
+                <select id="finishing" name="finishing">
+                    <option value="bright">Bright Annealed</option>
+                    <option value="polished">Polished</option>
+                    <option value="annealed">Annealed Pickled</option>
+                </select>
+            </div>
+            <div class="filter-group">
+                <label for="location">Location</label>
+                <select id="location" name="location">
+                    <option value="usa">USA</option>
+                    <option value="mco">MCO</option>
+                </select>
+            </div>
+        </div>
+        <div class="results-section">
+            <h3>Results Showed</h3>
+            <table>
+                <tr>
+                    <th>Product</th>
+                    <th>Quantity</th>
+                    <th>Location</th>
+                    <th></th>
+                </tr>
+                <tr>
+                    <td>316 SS Seamless Tubing 1/4" x .028 x 20'</td>
+                    <td>15</td>
+                    <td>USA</td>
+                    <td><a href="#" class="bid-button">Bid</a></td>
+                </tr>
+                <!-- Repeat the above <tr> block for each product result -->
+            </table>
+        </div>
+    </div>
 </body>
 </html>
