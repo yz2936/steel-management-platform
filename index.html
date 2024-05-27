@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RFQ Management</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="sidebar">
+        <ul>
+            <li><a href="#">Dashboard</a></li>
+            <li><a href="#">Supplier Pipeline</a></li>
+            <li><a href="#" class="active">RFQ Management</a></li>
+            <li><a href="#">Response Management</a></li>
+        </ul>
+    </div>
+    <div class="main-content">
+        <div class="header">
+            <h1>Profile</h1>
+            <button class="new-project-btn">New Project</button>
+        </div>
+        <div class="project-section">
+            <h2>Project Name</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Product</th>
+                        <th>Unit Weight (Kg)</th>
+                        <th>Total Weight (Kg)</th>
+                        <th>Desired Price??</th>
+                        <th>Delivery</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>PPE, ASTM A312-TP316, SMLS, SCH 10S, BE, ASME B36.19, DIAM. 4"</td>
+                        <td>Xxx</td>
+                        <td>Xxx</td>
+                        <td>Xxx</td>
+                        <td>CIF Houston, TX</td>
+                    </tr>
+                    <tr>
+                        <td>PPE, ASTM A312-TP316, SMLS, SCH 10S, BE, ASME B36.19, DIAM. 4"</td>
+                        <td>Xxx</td>
+                        <td>Xxx</td>
+                        <td>Xxx</td>
+                        <td>CIF Houston, TX</td>
+                    </tr>
+                    <tr>
+                        <td>PPE, ASTM A312-TP316, SMLS, SCH 10S, BE, ASME B36.19, DIAM. 4"</td>
+                        <td>Xxx</td>
+                        <td>Xxx</td>
+                        <td>Xxx</td>
+                        <td>CIF Houston, TX</td>
+                    </tr>
+                    <tr>
+                        <td>Valves Xxx</td>
+                        <td>Xxx</td>
+                        <td>Xxx</td>
+                        <td>Xxx</td>
+                        <td>CIF Houston, TX</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="recipient">
+                <label for="recipient">Recipient:</label>
+                <input type="text" id="recipient" placeholder="Add Receiver Email And Phone Number">
+            </div>
+            <div class="actions">
+                <button class="send-list-btn">Send To Selected Suppliers List</button>
+                <button class="send-network-btn">Send To Tripeak Supplier Network</button>
+            </div>
+        </div>
+        <div class="ongoing-projects">
+            <h2>On-Going Project</h2>
+            <div class="project-list">
+                <button class="review-match-btn">Review Match</button>
+                <button class="review-match-btn">Review Match</button>
+                <button class="review-match-btn">Review Match</button>
+            </div>
+        </div>
+        <div class="past-projects">
+            <h2>Past Project</h2>
+            <div class="project-list"></div>
+        </div>
+    </div>
+</body>
+</html>
